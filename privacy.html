@@ -19,7 +19,8 @@
 
 <h2>Google Drive sync (optional)</h2>
 <p>If you turn on Google Drive sync, the app asks for permission to use a private app data folder in <em>your own</em> Google Drive (the <code>drive.appdata</code> permission). It cannot see, open, or change any other files in your Drive.</p>
-<p>The app saves one file in that folder containing your Live TV setup: playlist and guide (EPG) addresses, Xtream Codes logins you entered, favorites, hidden channels and groups, channel names and numbers you changed, and your Live TV settings. This is used only to copy your setup between your own devices.</p>
+<p>If Google doesn't allow the private folder, the app instead uses the <code>drive.file</code> permission and saves a file named "Nuvio Live TV backup.json" in your Drive. With that permission it can only see files it created itself, never your other files.</p>
+<p>The app saves one file containing your Live TV setup: playlist and guide (EPG) addresses, Xtream Codes logins you entered, favorites, hidden channels and groups, channel names and numbers you changed, and your Live TV settings. This is used only to copy your setup between your own devices.</p>
 <p>The app also reads your Google account's email address, only to show which account is connected.</p>
 <p>Your Google sign-in is stored only on your device. The developer never receives it, and never receives or stores the contents of your backup.</p>
 
